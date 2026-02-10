@@ -1,0 +1,10 @@
+.header-logo img{
+    display:none;
+    width: 3200px;
+}
+.header-logo{
+    width: 80%;
+}
+nav{
+    list-style: none;
+}
