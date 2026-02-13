@@ -7,4 +7,37 @@
 }
 nav{
     list-style: none;
+    font-family: 'Roboto',sans-serif;
+}
+nav a:link{
+    text-decoration: none;
+    color:white;
+}
+nav a:active{
+    text-decoration: none;
+    color:white;
+}
+nav a:visited{
+    text-decoration: none;
+    color:white;
+}
+nav a:hover{
+    cursor: pointer;
+    color: rgb(200, 14, 14);
+}
+body{
+    background-image: url("../img/logos/VALORANT_Logo_V_galleryimage.jpg");
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+h2{
+    font-family: "Google Sans", sans-serif;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+}
+#intro_articulo{
+    background-color: rgba(55, 55, 55, 0.633);
 }

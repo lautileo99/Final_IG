@@ -13,23 +13,48 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav class="bg-black border-bottom border-danger">
-        <ul>
-            <li><a href="#introduccion">Introducción</a></li>
-            <li><a href="juego.html">Juego</a></li>
-            <li><a href="lore.html">Lore</a></li>
-            <li><a href="aimtech.html">aimtech</a></li>
-            <li><a href="competitivo.html">Competitivo</a></li>
-            <li><a href="formulario.html">formulario</a></li>
-            <li><a href="dev.html">DEV</a></li>
-        </ul>
-    </nav>
-    <header class="m-4 d-flex justify-content-start">
-         <h1>EL ORIGEN DE <strong class="text-danger">VALORANT</strong></h1>
-    </header>
+    <div class="container-fluid">
+        <nav class="mt-2 p-4 d-flex flex-row justify-content-around text-light bg-black border border-secondary rounded-2">
+            <div><a href="#introduccion">Introducción</a></div>
+            <div><a href="juego.html">Juego</a></div>
+            <div><a href="lore.html">Lore</a></div>
+            <div><a href="aimtech.html">Aimtech</a></div>
+            <div><a href="competitivo.html">Competitivo</a></div>
+            <div><a href="formulario.html">Formulario</a></div>
+            <div><a href="dev.html">DEV</a></div>
+        </nav>
+        <header class="m-4 text-light">
+            <h1>EL ORIGEN DE <strong class="text-danger mb-0">VALORANT</strong></h1>
+            <div class="mt-0 ps-5 bg-black bg-opacity-75">
+                <h2 class="text-white text-opacity-75">El nacimiento de un nuevo competitivo...</h2>
+            </div>
+        </header>
+        
+        <main class="m-3">
+            <article class="p-2 m-1 d-flex justify-content-around align-items-center border border-danger rounded-3 gap-3 bg-black bg-opacity-50">
+                <p class="w-50 text-light fs-4 m-3">
+                    VALORANT fue desarrollado por Riot Games bajo el nombre en clave <strong class="text-danger">"Project A"    </strong> durante varios años antes de su lanzamiento oficial el 2 de junio de 2020. El juego nació de la visión de crear un shooter táctico competitivo que combinara la precisión y estrategia de Counter-Strike con elementos únicos de habilidades de personajes.
+                    El equipo de desarrollo, liderado por veteranos de la industria con experiencia en títulos como Counter-Strike, Rainbow Six y Overwatch, se propuso crear un juego que priorizara la integridad competitiva, la precisión del disparo y un rendimiento de 128 ticks en todos los servidores.
+                </p>
+                <iframe class="rounded-3" width="560" height="365" src="https://www.youtube.com/embed/4iGU6PctOBg?si=wNxSV6Hc_q334OPB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </article>
+            <br><br><br><br>
+            <article class="p-2 mt-4 d-flex justify-content-around align-items-center border border-danger rounded-3 gap-3 bg-black bg-opacity-50">
+                <p class="w-50 text-light fs-4 m-3">
+                    Se lanza la beta cerrada el 7 de abril, generando millones de horas de visualización en Twitch mientras los jugadores compiten por acceso mediante el sistema de drops.
+                </p>
+                <iframe class="rounded-3" width="560" height="365" src="https://www.youtube.com/embed/gF_UGnIqIgM?si=8kB3GqSeqC1V86N2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </article>
 
-
-
+            <br><br><br><br>
+            <article class="p-2 mt-4 d-flex justify-content-around align-items-center border border-danger rounded-3 gap-3 bg-black bg-opacity-50">
+                <p class="w-50 text-light fs-4 m-3">
+                    El 2 de junio de 2020, VALORANT se lanza oficialmente en todo el mundo como free-to-play, alcanzando millones de jugadores en sus primeros días.
+                </p>
+                <iframe width="560" height="365" src="https://www.youtube.com/embed/e_E9W2vsRbQ?si=1ksnOVCYsVm9UDTi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </article>
+        </main>
+    </div>
     <script src="js/animacion-logo.js"></script>
 </body>
 </html>
