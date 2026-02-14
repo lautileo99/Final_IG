@@ -1,3 +1,7 @@
+#body_index{
+    background-image: none;
+}
+
 .header-logo img{
     display:none;
     width: 3200px;
