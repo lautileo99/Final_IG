@@ -14,7 +14,7 @@
 </head>
 <body>
     <div class="container-fluid">
-        <nav class="mt-2 p-4 d-flex flex-row justify-content-around text-light bg-black bg-opacity-50 border border-secondary rounded-2">
+        <nav class="mt-2 fs-4 p-4 d-flex flex-row justify-content-around text-light bg-black bg-opacity-50 border border-secondary rounded-2">
             <div><a href="introduccion.html">Introducción</a></div>
             <div><a href="#juego">Juego</a></div>
             <div><a href="lore.html">Lore</a></div>
@@ -28,25 +28,45 @@
         </header>
         
         <main class="m-3 d-flex flex-column align-items-center">
-            <article class="w-75 p-4 m-1 d-flex flex-column border border-danger rounded-3 bg-light">
-                    <p class="text-black fs-4 mt-3">
+            <article class="w-100 p-4 m-1 d-flex flex-column bg-black bg-opacity-50 rounded-3">
+                    <p class="text-light fs-3 mt-3">
                         Valorant es un shooter táctico en primera persona desarrollado por Riot Games. Combina disparos precisos con <strong class="text-danger">habilidades únicas de agentes</strong>, lo que mezcla estrategia, coordinación y reflejos en cada partida.
                     </p>
-                    <p class="text-black fs-4 mt-3">
+                    <p class="text-light fs-3 mt-3">
                         El modo principal del juego está basado en el formato <strong class="text-danger">Search and Destroy:</strong>  un equipo ataca intentando plantar la Spike (bomba), mientras el otro defiende e intenta evitarlo o desactivarla. 
                     </p>   
-                    <p class="text-black fs-4 mt-3">Cada ronda exige comunicación, control del mapa y toma de decisiones rápidas.</p>
+                    <p class="text-light fs-3 mt-3">Cada ronda exige comunicación, control del mapa y toma de decisiones rápidas.</p>
             </article>
-            <br><br><br><br>
-            <section class="m-3 w-75">
-                <div class="d-flex flex-column align-items-center border rounded-2 border-danger p-3 bg-black bg-opacity-50">
+            <br><br><br><br><br><br>
+
+            <h2 class="fs-2 text-center text-light">Haga <strong class="text-primary">click</strong> sobre el aspecto que desea conocer</h2>
+
+            <section id="seccion_juego" class="m-3 mx-auto d-flex flex-column gap-5">
+                <div class="d-flex w-75 flex-column align-items-center align-self-start rounded-2 p-1 bg-black bg-opacity-50">
                     <h2 class="text-light fs-3">Agentes</h2>
-                    <a class="text-center" href="agentes.html"><img class="w-50" src="img/logos/agentes-previa.jpg" alt="agentes-previa"></a>
+                    <a class="text-center" href="agentes.html"><img class="w-75 rounded-2" src="img/logos/agentes-previa.jpg" alt="agentes-previa"></a>
                     <p class="text-light fs-5">Los protagonistas del videojuego</p>
+                </div>
+
+                <div class="d-flex w-75 flex-column align-items-center align-self-end rounded-2 p-1 bg-black bg-opacity-50">
+                    <h2 class="text-light fs-3">Mapas</h2>
+                    <a class="text-center" href="mapas.html"><img class="w-75 rounded-2" src="img/misc/all-maps.jpg" alt="mapas"></a>
+                    <p class="text-light fs-5">Los escenarios de batalla</p>
+                </div>
+
+                <div class="d-flex w-75 flex-column align-items-center align-self-start rounded-2 p-1 bg-black bg-opacity-50">
+                    <h2 class="text-light fs-3">Modos de juego</h2>
+                    <a class="text-center" href="modos.html"><img class="w-75 rounded-2" src="img/misc/modes.jpg" alt="agentes-previa"></a>
+                    <p class="text-light fs-5">Cada modo, una nueva estrategia</p>
+                </div>
+
+                <div class="d-flex w-75 flex-column align-items-center align-self-end rounded-2 p-1 bg-black bg-opacity-50">
+                    <h2 class="text-light fs-3">Arsenal</h2>
+                    <a class="text-center" href="armas.html"><img class="w-75 rounded-2" src="img/misc/guns.jpg" alt="guns"></a>
+                    <p class="text-light fs-5">Los medios para cumplir el objetivo</p>
                 </div>
             </section>
         </main>
     </div>
-    <script src="js/animacion-logo.js"></script>
 </body>
 </html>

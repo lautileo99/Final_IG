@@ -27,7 +27,8 @@ nav a:visited{
 }
 nav a:hover{
     cursor: pointer;
-    color: rgb(200, 14, 14);
+    color: rgb(255, 57, 57);
+    border-bottom: solid rgb(255, 57, 57) 1px;
 }
 body{
     background-image: url("../img/logos/VALORANT_Logo_V_galleryimage.jpg");
@@ -44,4 +45,16 @@ p{
 }
 #intro_articulo{
     background-color: rgba(55, 55, 55, 0.633);
+}
+
+/*_________________Juego_________________________*/
+#seccion_juego img:hover{
+    border: solid white 1px;
+    border-radius: .375rem;
+}
+
+/*________________Agentes________________________*/
+.agente-img {
+  height: 500px;
+  object-fit: cover;
 }
