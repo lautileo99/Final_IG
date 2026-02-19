@@ -1,10 +1,68 @@
+
+#video_fondo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  max-height: 100%;
+  z-index: 0;
+}
+.content_landing{
+    z-index: 10;
+}
+
 .header-logo img{
     display:none;
-    width: 3200px;
 }
 .header-logo{
     width: 80%;
 }
-nav{
+a{
     list-style: none;
+    font-family: 'Roboto',sans-serif;
+}
+nav a:link{
+    text-decoration: none;
+    color:white;
+}
+nav a:active{
+    text-decoration: none;
+    color:white;
+}
+nav a:visited{
+    text-decoration: none;
+    color:white;
+}
+nav a:hover{
+    cursor: pointer;
+    color: rgb(255, 57, 57);
+    border-bottom: solid rgb(255, 57, 57) 1px;
+}
+body{
+    background-image: url("../img/logos/VALORANT_Logo_V_galleryimage.jpg");
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+h2{
+    font-family: "Google Sans", sans-serif;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+}
+#intro_articulo{
+    background-color: rgba(55, 55, 55, 0.633);
+}
+
+/*_________________Juego_________________________*/
+#seccion_juego img:hover{
+    border: solid white 1px;
+    border-radius: .375rem;
+}
+
+/*________________Agentes________________________*/
+.agente-img {
+  height: 500px;
+  object-fit: cover;
 }
