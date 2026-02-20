@@ -57,3 +57,8 @@ p{
   height: 500px;
   object-fit: cover;
 }
+
+.listadesordenada{
+    list-style: none;
+    margin-bottom: .10em;
+}
