@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mapas</title>
+    <title>Modos de juego</title>
     <link rel="icon" type="image/x-icon" href="img/logos/v_red.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +16,7 @@
     <div class="container-fluid">
         <nav class="mt-2 fs-4 p-4 d-flex flex-row justify-content-around text-light bg-black bg-opacity-50 border border-secondary rounded-2">
             <div><a href="introduccion.html">Introducción</a></div>
-            <div><a href="#juego">Juego</a></div>
+            <div><a href="juego.html">Juego</a></div>
             <div><a href="lore.html">Lore</a></div>
             <div><a href="aimtech.html">Aimtech</a></div>
             <div><a href="competitivo.html">Competitivo</a></div>
@@ -24,11 +24,250 @@
             <div><a href="dev.html">DEV</a></div>
         </nav>
         <header class="m-4 text-light text-center">
-            <h1>Un juego tactical shooter basado en personajes.</h1>
+            <h1>Haga <strong class="text-primary">Click</strong> en cada modo para ver su explicación.</h1>
         </header>
         
-        <main class="m-3 d-flex flex-column align-items-center">
-           
+        <main class="mt-3 d-flex flex-column gap-5">
+            <div class="border border-primary bg-black bg-opacity-50 rounded p-4 w-100">
+                <h2 class="text-light text-center fs-3 mb-3">Modos principales</h2>
+                <div class="d-flex justify-content-around gap-5">
+                    <!-- COLUMNA NORMAL -->
+                    <div class="d-flex flex-column align-items-center w-50">
+                        <div class="border border-primary rounded w-100 pt-3 bg-black bg-gradient"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseWidth1">
+
+                            <p class="fs-4 text-light text-center">Normal</p>
+                        </div>
+                        <div class="collapse mt-3 w-100 bg-black bg-opacity-50 p-4 rounded" id="collapseWidth1">
+                            <p class="fs-4 text-light"> Es la versión casual del modo competitivo. Se juega con las mismas reglas que Ranked, pero no afecta tu rango ni tu MMR visible. </p> <h2 class="text-light">Rondas para ganar</h2> <p class="fs-4 text-light"> Se juega al mejor de 25 rondas. <br> Luego de las primeras 12 rondas, los atacantes cambian de lado a defensores, y viceversa. <br> Gana el primero en llegar a 13 rondas. <br> Si termina 12-12, se juega una ronda más: <strong class="text-danger">Muerte Subita</strong>. </p>
+                        </div>
+                    </div>
+                
+                    <!-- COLUMNA RANKED -->
+                    <div class="d-flex flex-column align-items-center w-50">
+                        <div class="border border-primary rounded w-100 pt-3 bg-black bg-gradient"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseWidth2">
+                            <p class="fs-4 text-light text-center">Competitivo</p>
+                        </div>
+                        <div class="collapse mt-3 w-100 bg-black bg-opacity-50 p-4 rounded" id="collapseWidth2">
+                            <p class="fs-4 text-light"> Es el modo competitivo. Se juega con las mismas reglas que Normal, pero ahora se considera el <strong class="text-primary">Rango</strong> y el <strong class="text-primary">MMR</strong>. 
+                            </p> 
+                            <h2 class="text-light">Rondas para ganar</h2> 
+                            <p class="fs-4 text-light"> Se juega al mejor de 25 rondas. <br> Luego de las primeras 12 rondas, los atacantes cambian de lado a defensores, y viceversa. <br> Gana el primero en llegar a 13 rondas. <br> Si termina 12-12, se jugarán 2 rondas más con un cambio de lado por ronda. Si el empate persiste, tendremos una votación de finalizar en empate o de seguir. Si el empate da positivo, finalizará la partida en ese punto pero no habrá recompensa de puntos RR, aunque tampoco habrá perdida. Si se vota seguir, se continuará en un ciclo repetitivo de 2 rondas con cambio de lado por ronda y votaciones, hasta que se obtenga un ganador.
+                            </p> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border border-info bg-black bg-opacity-50 rounded p-4 w-100">
+                <h2 class="text-light text-center fs-3 mb-3">Modos secundarios</h2>
+                <div class="d-flex justify-content-evenly gap-3">
+                <!-- Spike Rush -->
+                <div class="d-flex flex-column align-items-center w-25">
+                    <div class="border border-info rounded w-100 pt-2 bg-black bg-gradient text-light text-center"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#spikeRush">
+                        <p class="fs-4 text-light text-center">Spike Rush</p>
+                    </div>
+                    <div class="collapse m-2 w-100" id="spikeRush">
+                        <div class="card card-body bg-opacity-50 p-4 rounded bg-black w-100">
+                            <p class="text-light fs-4">Es un modo frenético y corto, donde todos los atacantes poseen una spike asi que cualquiera puede realizar el plantado de la misma. El arma es la misma para todos y hay orbes de ultimate como también otros orbes que otorgan ciertas modificaciones:
+                            </p>
+                            <ul>
+                                <li class="text-light fs-4"><strong class="text-danger">Ultimate instantánea:</strong> Otorga todos los puntos necesarios para lanzar tu habilidad definitiva inmediatamente.</li>
+                                <li class="text-light fs-4"><strong class="text-danger">Arma mejorada (Gold Gun):</strong> Recibís una pistola dorada que elimina de un disparo, incluso a distancia. Tiene pocas balas pero es extremadamente letal.</li>
+                                <li class="text-light fs-4"><strong class="text-danger">Velocidad:</strong> Aumenta la velocidad de movimiento, recarga y cambio de arma por unos segundos.</li>
+                                <li class="text-light fs-4"><strong>Furia:</strong> Incrementa la cadencia de disparo y la velocidad de recarga del arma actual.</li>
+                                <li class="text-light fs-4"><strong class="text-danger">Salud:</strong> Regenera la vida progresivamente hasta el máximo.</li>
+                                <li class="text-light fs-4"><strong class="text-danger">Daño doble:</strong> Duplica el daño que infligís durante un tiempo limitado.</li>
+                                <li class="text-light fs-4"><strong class="text-danger">Paranoia:</strong> Aplica un efecto negativo al equipo enemigo, reduciendo su visión y alcance por algunos segundos.</li>
+                                <li class="text-light fs-4"><strong class="text-danger">Resurrección:</strong> Revive automáticamente a un compañero eliminado al poco tiempo.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Deathmatch -->
+                <div class="d-flex flex-column align-items-center w-25">
+                    <div class="border border-info rounded w-100 pt-2 bg-black bg-gradient text-light text-center"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#deathmatch">
+                        <p class="fs-4 text-light text-center">DeathMatch</p>
+                    </div>
+
+                    <div class="collapse mt-2 w-100 ms-3" id="deathmatch">
+                        <div class="card card-body bg-black bg-opacity-50 text-light w-100">
+                            <p class="text-light fs-4">
+                              Elige un arma y pelea contra todos. <br> Sin habilidades ni orbes, sin plantar ninguna spike ni elegir un agente. <br> Con respawn instantáneo. <br> Al obtener un asesinato, el cuerpo deja un objeto curador que al pasar por encima, <strong class="text-white">regenera</strong> la vida al 100%. <br> Ideal para prácticar la puntería y probar todo el arsenal disponible. También conocer la sensibilidad de mira correcta y otras configuraciones.  
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- SwiftPlay -->
+                <div class="d-flex flex-column align-items-center w-25">
+                    <div class="border border-info w-100 rounded pt-2 bg-black bg-gradient text-light text-center"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#swiftplay">
+                        <p class="fs-4 text-light text-center">SwiftPlay</p>
+                    </div>
+
+                    <div class="collapse mt-2 w-100 bg-black bg-opacity-50 rounded p-3" id="swiftplay">
+                        <p class="fs-4 text-light">Son las mismas reglas que en la normal, pero menos rondas totales, el primero en llegar a 7 rondas ganadas, será el ganador. Ideal para probar agentes y ciertas habilidades, como tambien pequeñas estrategias para practicar con tus amigos o compañeros.</p>
+                    </div>
+
+                </div>
+
+                <!-- Team Deathmatch -->
+                <div class="d-flex flex-column align-items-center w-25">
+
+                    <div class="border border-info rounded w-100 pt-2 bg-black bg-gradient text-light text-center"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#teamDeathmatch">
+                        <p class="fs-4 text-light text-center">Team Deathmatch</p>
+                    </div>
+
+                    <div class="collapse mt-2 w-100" id="teamDeathmatch">
+                        <div class="card card-body bg-black bg-opacity-50 rounded text-light">
+                            <p class="fs-4 text-light">Es una partida rápida, sin transición por rondas, con respawn instantáneo. <br> Hay habilidades pero no se compran como en las partidas normales, se obtendrán cada cierto tiempo. <br> Tambien hay orbes de ultimate, pero cada una solo otorga el 25% de la definitiva. Y las armas no se compran, solo se eligen de entre algunas opciones ya que hay zonas del mapa que te otorgarán armas mas fuertes. El primer equipo en lograr 70 asesinatos (sumando los de cada jugador) ganará la partida.</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="border border-warning bg-black bg-opacity-50 rounded p-4 w-100">
+                <h2 class="text-light text-center fs-3 mb-3">Modos especiales de temporada</h2>
+                <div class="d-flex justify-content-between gap-3">
+                <!-- Snowball Fight -->
+                <div class="d-flex flex-column align-items-center w-25">
+
+                    <div class="border border-warning rounded w-100 pt-3 bg-black bg-gradient text-light text-center"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#snowball">
+                        <p class="fs-4 text-light text-center">Snowball Fight</p>
+                    </div>
+
+                    <div class="collapse mt-2 w-100" id="snowball">
+                        <div class="card card-body bg-black bg-opacity-50 rounded text-light">
+                            <p class="text-light fs-4">Modo especial de temporada que suele aparecer en eventos de invierno. <br>
+                                Todos los jugadores usan lanzadores de bolas de nieve en vez de armas normales. <br>
+                                Las bolas eliminan de un impacto directo. <br>
+                                Hay potenciadores repartidos por el mapa (rebotes, disparo rápido, multiplicador de proyectiles, etc.). <br>
+                                Gana el equipo que alcance primero la cantidad de eliminaciones objetivo. <br>
+                                Es un modo casual, rápido y completamente enfocado en diversión.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- All Random One Site -->
+                <div class="d-flex flex-column align-items-center w-25">
+
+                    <div class="border border-warning rounded w-100 pt-3 bg-black bg-gradient text-light text-center"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#random_one_site">
+                        <p class="fs-4 text-light text-center">All Random One Site</p>
+                    </div>
+
+                    <div class="collapse mt-2 w-100" id="random_one_site">
+                        <div class="card card-body bg-black bg-opacity-50 rounded text-light">
+                            <p class="text-light fs-4">Modo rotativo centrado en acción constante en un único sitio de bomba.
+                                El mapa se limita a una sola zona (un solo site). <br>
+                                Los agentes se asignan de manera aleatoria. <br>
+                                Las rondas son rápidas y el combate es inmediato. <br>
+                                Se mantienen roles de ataque y defensa. <br>
+                                Ideal para partidas dinámicas y sin tanta estrategia macro.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Replication -->
+                <div class="d-flex flex-column align-items-center w-25">
+
+                    <div class="border border-warning rounded w-100 pt-3 bg-black bg-gradient text-light text-center"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#replication">
+                        <p class="fs-4 text-light text-center">Replication</p>
+                    </div>
+
+                    <div class="collapse mt-2 w-100" id="replication">
+                        <div class="card card-body bg-black bg-opacity-50 rounded text-light">
+                            <p class="text-light fs-4">Modo donde la estrategia gira alrededor de un solo agente por equipo. <br>
+                            Cada jugador vota un agente. <br>
+                            El juego elige uno de los votos al azar. <br>
+                            Todo el equipo juega con ese <strong class="text-warning">mismo agente.</strong>  <br> 
+                            Se mantiene la estructura clásica de ataque y defensa. <br>
+                            Las partidas son más cortas que en Normal/Ranked. <br>
+                            Se generan situaciones caóticas y divertidas (cinco ultimates iguales, por ejemplo).</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Escalation -->
+                <div class="d-flex flex-column align-items-center w-25">
+
+                    <div class="border border-warning rounded w-100 pt-3 bg-black bg-gradient text-light text-center"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#escalation">
+                        <p class="fs-4 text-light text-center">Escalation</p>
+                    </div>
+
+                    <div class="collapse mt-2 w-100" id="escalation">
+                        <div class="card card-body bg-black bg-opacity-50 rounded text-light">
+                            <p class="text-light fs-4">Modo estilo <strong class="text-warning">progresión de armas.</strong>  <br>
+                                Ambos equipos avanzan por una secuencia de armas predeterminada. <br>
+                                Las eliminaciones hacen progresar al equipo al siguiente armamento. <br>
+                                Todos los integrantes comparten el mismo nivel de arma. <br>
+                                Gana el equipo que complete primero toda la rotación. <br>
+                                No hay economía ni compra de armas.
+                                </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Skirmish -->
+                <div class="d-flex flex-column align-items-center w-25">
+
+                    <div class="border border-warning rounded w-100 pt-3 bg-black bg-gradient text-light text-center"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#skirmish">
+                        <p class="fs-4 text-light text-center">Skirmish</p>
+                    </div>
+
+                    <div class="collapse mt-2 w-100" id="skirmish">
+                        <div class="card card-body bg-black bg-opacity-50 rounded text-light">
+                            <p class="text-light fs-4"> 
+                                Escaramuza 2 contra 2 es un modo de duelo al mejor de 19 por tiempo limitado, introducido en el parche v12.03. <br>
+                                Cada equipo está formado por dos jugadores. <br> El uso de habilidades está deshabilitado y los agentes son aleatorios según la posesión de agentes por parte del jugador.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                </div>
+            </div>
         </main>
     </div>
 </body>
