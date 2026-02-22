@@ -81,3 +81,13 @@ p{
     color: crimson;
     text-decoration: underline;
 }
+
+.equipos img{
+    max-width: 32px;
+}
+
+.img_btn{
+    width: 24vw;       /* tamaño fijo */
+    height: 14vh;       /* mismo alto para todos */
+    object-fit: contain; /* mantiene proporción */
+}
