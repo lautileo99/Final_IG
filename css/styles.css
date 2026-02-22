@@ -62,3 +62,22 @@ p{
     list-style: none;
     margin-bottom: .10em;
 }
+
+#seccion_armas{
+    background-color: rgba(6, 6, 97, 0.732);
+}
+#seccion_armas img{
+    max-width: 340px;
+}
+#cuchillo{
+    display: none;
+}
+#btn_cuchillo{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: white;
+}
+#btn_cuchillo:hover{
+    color: crimson;
+    text-decoration: underline;
+}

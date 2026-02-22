@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mapas</title>
+    <title>Armas</title>
     <link rel="icon" type="image/x-icon" href="img/logos/v_red.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +16,7 @@
     <div class="container-fluid">
         <nav class="mt-2 fs-4 p-4 d-flex flex-row justify-content-around text-light bg-black bg-opacity-50 border border-secondary rounded-2">
             <div><a href="introduccion.html">Introducción</a></div>
-            <div><a href="#juego">Juego</a></div>
+            <div><a href="juego.html">Juego</a></div>
             <div><a href="lore.html">Lore</a></div>
             <div><a href="aimtech.html">Aimtech</a></div>
             <div><a href="competitivo.html">Competitivo</a></div>
@@ -28,8 +28,177 @@
         </header>
         
         <main class="m-3 d-flex flex-column align-items-center">
-           
+            <div class="m-3 text-center rounded-2 bg-black bg-opacity-50 p-3 w-100">
+                <p class="text-light fs-3">El jugador puede poseer 3 tipos de armas, una pesada, una liviana y una de cuerpo a cuerpo. <br> El arma cuerpo a cuerpo es el <button id="btn_cuchillo">cuchillo</button> , el cual es el mismo para todos. </p>
+                <div id="cuchillo">
+                    <h2 class="text-light fs-5">Cuchillo</h2>
+                    <img class="rounded-1" src="img/misc/cuchillo.avif" alt="cuchillo">
+                    <p class="text-light w-75 m-2">
+                        Unica arma cuerpo a cuerpo. El jugador puede moverse ligeramente más rápido con esta arma. <br> Tiene 2 tipos de ataque, ataque comun y apuñalada.
+                    </p>
+                </div>     <br>
+                <p class="text-light fs-3">De arma pesada podemos tener <strong class="text-danger"> sub-fusiles, rifles de asalto, escopetas, rifles de largo alcance</strong> y <strong class="text-danger"> ametralladoras ligeras.</strong><br>
+                Y como arma liviana, tenemos varios tipos de <strong class="text-danger">arma de mano.</strong>  <br>
+                <br> A continuación veremos todo el arsenal disponible, como aparece en el menú de compras: </p>
+            </div>
+
+            <section id="seccion_armas" class="mt-2 d-flex flex-row justify-content-around border rounded w-100 gap-2">
+                <!--PRIMERA COLUMNA-->
+                <div class="mx-auto pt-2 d-flex flex-column align-items-center w-25 bg-black bg-opacity-50">
+                        <h2 class="text-light">Armas de mano</h2>
+                    <div class="d-flex flex-column align-items-center bg-black bg-opacity-50 rounded-2 m-3">
+                            <h2 class="text-light fs-5">Classic</h2>
+                            <img class="rounded-1" src="img/misc/classic.avif" alt="classic">
+                            <p class="text-light w-75 m-2">Pistola semi-automática con 2 tipos de disparo, disparo simple y disparo triple.</p>
+                    </div>
+                    <div class="d-flex flex-column align-items-center bg-black bg-opacity-50 rounded-2 m-3">
+                            <h2 class="text-light fs-5">Shorty</h2>
+                            <img class="rounded-1" src="img/misc/shorty.avif" alt="shorty">
+                            <p class="text-light w-75 m-2">Escopeta recortada de 2 disparos, muy potente en encuentros cercanos.</p>
+                    </div>
+                    <div class="d-flex flex-column align-items-center bg-black bg-opacity-50 rounded-2 m-3">
+                        <h2 class="text-light fs-5">Frenzy</h2>
+                        <img class="rounded-1" src="img/misc/frenzy.avif" alt="frenzy">
+                        <p class="text-light w-75 m-2">
+                            Pistola automática de corto alcance con alta cadencia de disparo.
+                        </p>
+                    </div>
+
+                    <div class="d-flex flex-column align-items-center bg-black bg-opacity-50 rounded-2 m-3">
+                        <h2 class="text-light fs-5">Ghost</h2>
+                        <img class="rounded-1" src="img/misc/ghost.avif" alt="ghost">
+                        <p class="text-light w-75 m-2">
+                            Pistola semi-automática con silenciador, precisa y efectiva a media distancia.
+                        </p>
+                    </div>
+
+                    <div class="d-flex flex-column align-items-center bg-black bg-opacity-50 rounded-2 m-3">
+                        <h2 class="text-light fs-5">Bandit</h2>
+                        <img class="rounded-1" src="img/misc/bandit.webp" alt="bandit">
+                        <p class="text-light w-75 m-2">
+                            Pistola semi-automática muy potente, pensada para ser un punto medio entre la Ghost y la Sheriff.
+                        </p>
+                    </div>
+
+                    <div class="d-flex flex-column align-items-center bg-black bg-opacity-50 rounded-2 m-3">
+                        <h2 class="text-light fs-5">Sheriff</h2>
+                        <img class="rounded-1" src="img/misc/sheriff.avif" alt="sheriff">
+                        <p class="text-light w-75 m-2">
+                            Revólver de alto daño, capaz de eliminar de un disparo a la cabeza.
+                        </p>
+                    </div>
+                </div>
+                <!--SEGUNDA COLUMNA-->
+                <div class="mx-auto pt-2 d-flex flex-column align-items-center w-25 bg-black bg-opacity-50">
+                    <h2 class="text-light">Sub-fusiles</h2>   
+                    <div class="d-flex flex-column align-items-center bg-black bg-opacity-50 rounded-2 m-3">
+                        <h2 class="text-light fs-5">Stinger</h2>
+                        <img class="rounded-1" src="img/misc/stinger.avif" alt="stinger">
+                        <p class="text-light w-75 m-2">
+                            Subfusil económico con alta cadencia y eficaz en distancias cortas.
+                        </p>
+                    </div>
+                    <div class="d-flex flex-column align-items-center bg-black bg-opacity-50 rounded-2 m-3">
+                        <h2 class="text-light fs-5">Spectre</h2>
+                        <img class="rounded-1" src="img/misc/spectre.avif" alt="spectre">
+                        <p class="text-light w-75 m-2">
+                            Subfusil silencioso, estable y versátil en combate cercano y medio.
+                        </p>
+                    </div>
+                    <h2 class="text-light">Escopetas</h2> 
+                    <div class="d-flex flex-column align-items-center bg-black bg-opacity-50 rounded-2 m-3">
+                        <h2 class="text-light fs-5">Bucky</h2>
+                        <img class="rounded-1" src="img/misc/bucky.avif" alt="bucky">
+                        <p class="text-light w-75 m-2">
+                            Escopeta económica con gran daño en distancias cortas.
+                        </p>
+                    </div>
+
+                    <div class="d-flex flex-column align-items-center bg-black bg-opacity-50 rounded-2 m-3">
+                        <h2 class="text-light fs-5">Judge</h2>
+                        <img class="rounded-1" src="img/misc/judge.avif" alt="judge">
+                        <p class="text-light w-75 m-2">
+                            Escopeta automática devastadora en combates cercanos.
+                        </p>
+                    </div>
+                </div>
+                <!--Tercera COLUMNA-->
+                <div class="mx-auto pt-2 d-flex flex-column align-items-center w-25 bg-black bg-opacity-50">
+                    <h2 class="text-light">Rifles de asalto</h2> 
+                    <div class="d-flex flex-column align-items-center bg-black bg-opacity-50 rounded-2 m-3">
+                        <h2 class="text-light fs-5">Bulldog</h2>
+                        <img class="rounded-1" src="img/misc/bulldog.avif" alt="bulldog">
+                        <p class="text-light w-75 m-2">
+                            Rifle automático con modo de ráfaga al apuntar.
+                        </p>
+                    </div>
+
+                    <div class="d-flex flex-column align-items-center bg-black bg-opacity-50 rounded-2 m-3">
+                        <h2 class="text-light fs-5">Guardian</h2>
+                        <img class="rounded-1" src="img/misc/guardian.avif" alt="guardian">
+                        <p class="text-light w-75 m-2">
+                            Rifle semiautomático de alta precisión y gran daño por disparo.
+                        </p>
+                    </div>
+
+                    <div class="d-flex flex-column align-items-center bg-black bg-opacity-50 rounded-2 m-3">
+                        <h2 class="text-light fs-5">Phantom</h2>
+                        <img class="rounded-1" src="img/misc/phantom.avif" alt="phantom">
+                        <p class="text-light w-75 m-2">
+                            Rifle automático silencioso, preciso y ideal para control.
+                        </p>
+                    </div>
+
+                    <div class="d-flex flex-column align-items-center bg-black bg-opacity-50 rounded-2 m-3">
+                        <h2 class="text-light fs-5">Vandal</h2>
+                        <img class="rounded-1" src="img/misc/vandal.avif" alt="vandal">
+                        <p class="text-light w-75 m-2">
+                            Rifle automático de alto daño constante a cualquier distancia.
+                        </p>
+                    </div>
+                    
+                </div>
+                <!--Cuarta COLUMNA-->
+                <div class="mx-auto pt-2 d-flex flex-column align-items-center w-25 bg-black bg-opacity-50">
+                    <h2 class="text-light">Rifles de largo alcance</h2> 
+                    <div class="d-flex flex-column align-items-center bg-black bg-opacity-50 rounded-2 m-3">
+                        <h2 class="text-light fs-5">Marshal</h2>
+                        <img class="rounded-1" src="img/misc/marshall.avif" alt="marshal">
+                        <p class="text-light w-75 m-2">
+                            Francotirador ligero, económico y letal con disparos precisos.
+                        </p>
+                    </div>
+
+                    <div class="d-flex flex-column align-items-center bg-black bg-opacity-50 rounded-2 m-3">
+                        <h2 class="text-light fs-5">Operator</h2>
+                        <img class="rounded-1" src="img/misc/operator.avif" alt="operator">
+                        <p class="text-light w-75 m-2">
+                            Francotirador pesado capaz de eliminar de un solo disparo al cuerpo.
+                        </p>
+                    </div>
+                    <h2 class="text-light">Ametralladoras ligeras</h2> 
+                    <div class="d-flex flex-column align-items-center bg-black bg-opacity-50 rounded-2 m-3">
+                        <h2 class="text-light fs-5">Ares</h2>
+                        <img class="rounded-1" src="img/misc/ares.avif" alt="ares">
+                        <p class="text-light w-75 m-2">
+                            Ametralladora ligera con gran capacidad de munición.
+                        </p>
+                    </div>
+
+                    <div class="d-flex flex-column align-items-center bg-black bg-opacity-50 rounded-2 m-3">
+                        <h2 class="text-light fs-5">Odin</h2>
+                        <img class="rounded-1" src="img/misc/odin.avif" alt="odin">
+                        <p class="text-light w-75 m-2">
+                            Ametralladora pesada con altísima cadencia y penetración.
+                        </p>
+                    </div>
+                </div>
+                
+            </section>
         </main>
+         
     </div>
+    
+    <script src="js/mostrar.js"></script>
 </body>
 </html>
