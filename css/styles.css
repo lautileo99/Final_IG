@@ -39,6 +39,23 @@ body{
     padding: 0;
     overflow-x: hidden;
 }
+.mapa{
+    display: none;
+}
+#main_mapas button{
+    border-radius: 20px;
+    background-color: white;
+    width: 10%;
+}
+#main_mapas button img{
+    width: 4em;
+    height: 4em;
+}
+
+#main_mapas button:hover{
+    background-color: rgb(1, 159, 146);
+}
+
 h2{
     font-family: "Google Sans", sans-serif;
 }
@@ -120,4 +137,16 @@ p{
 
 #dev_fondo{
     background-image: none;
+}
+
+#formulario{
+    border: white solid 2px;
+}
+
+.formulario_ok{
+    padding-top: .55em;
+    background-color: rgb(173, 255, 173);
+    color: green;
+    border: solid green 1px;
+    display: none;
 }

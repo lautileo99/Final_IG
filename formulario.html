@@ -13,8 +13,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container-fluid">
-        <nav class="mt-2 fs-4 p-4 d-flex flex-row justify-content-around text-light bg-black bg-opacity-50 border border-secondary rounded-2">
+    <div class="container-fluid min-vh-100">
+        <nav class="mt-2 fs-4 p-4 d-flex flex-row justify-content-around text-light bg-black bg-opacity-50 border border-light rounded-2">
             <div><a href="introduccion.html">Introducción</a></div>
             <div><a href="juego.html">Juego</a></div>
             <div><a href="lore.html">Lore</a></div>
@@ -23,16 +23,54 @@
             <div><a href="#formulario">Formulario</a></div>
         </nav>
         <header class="m-4 text-light text-center">
-            <h1>Un juego tactical shooter basado en personajes.</h1>
+            <h2 class="text-light text-center">Contactanos a través del siguiente formulario:</h2>
         </header>
         
-        <main class="m-3 d-flex flex-column align-items-center">
-           
+        <main class="m-3 d-flex flex-column align-items-center">      
+                <form id="formulario" class="container mt-4 p-4 rounded shadow bg-black text-light" 
+                action="#" method="post">
+                    <h2 class="mb-4 text-center">Formulario de contacto</h2>
+                    <!-- Nombre y Apellido -->
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label fs-4">Nombre y Apellido</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ej: Juan Pérez"required>
+                    </div>
+                    <!-- Email -->
+                    <div class="mb-3">
+                        <label for="email" class="form-label fs-4">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="correo@ejemplo.com" required>
+                    </div>
+                    <!-- Teléfono -->
+                    <div class="mb-3">
+                        <label for="telefono" class="form-label fs-4">Número de Teléfono</label>
+                        <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="1112345678" required>
+                    </div>
+                    <!-- Comentario -->
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label fs-4">Comentario</label>
+                        <textarea  class="form-control" id="mensaje" name="mensaje" rows="4" placeholder="Escribí tu mensaje aquí..." required></textarea>
+                    </div>
+
+                    
+                    <!-- Botón -->
+                    <div class="d-flex justify-content-center">
+                        <button id="submit" type="submit" class="btn btn-dark text-light fs-3 w-100">
+                            Enviar
+                        </button>
+                    </div>
+
+                    <div class="formulario_ok w-100 rounded mt-4">
+                        <h2 class="text-center fs-3">Datos ingresados correctamente.</h2>
+                    </div>
+                </form>
+
         </main>
     </div>
 
     <footer class="d-flex flex-column align-items-center bg-dark bg-gradient pt-3 w-100">
         <p class="text-white fs-5 text-center">Para más información, consultas u observaciones, contactarse al mail <a href="mailto:lautaro.soriano@hotmail.com" class="text-primary hover">lautaro.soriano@hotmail.com</a> o puede visitar la página del <a href="dev.html">desarrollador</a>.</p>
     </footer>
+
+    <script src="js/formulario.js"></script>
 </body>
 </html>

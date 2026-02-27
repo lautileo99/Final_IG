@@ -13,7 +13,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid min-vh-100">
         <nav class="mt-2 fs-4 p-4 d-flex flex-row justify-content-around text-light bg-black bg-opacity-50 border border-secondary rounded-2">
             <div><a href="introduccion.html">Introducción</a></div>
             <div><a href="juego.html">Juego</a></div>
@@ -33,190 +33,132 @@
             </p>
         </section>
         
-        <main>
-           <div id="carouselMapas" class="carousel slide bg-black py-5" data-bs-ride="carousel">
-                <!-- Indicators -->
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselMapas" data-bs-slide-to="0" class="active"></button>
-                    <button type="button" data-bs-target="#carouselMapas" data-bs-slide-to="1"></button>
-                    <button type="button" data-bs-target="#carouselMapas" data-bs-slide-to="2"></button>
-                    <button type="button" data-bs-target="#carouselMapas" data-bs-slide-to="3"></button>
-                    <button type="button" data-bs-target="#carouselMapas" data-bs-slide-to="4"></button>
-                    <button type="button" data-bs-target="#carouselMapas" data-bs-slide-to="5"></button>
-                    <button type="button" data-bs-target="#carouselMapas" data-bs-slide-to="6"></button>
-                    <button type="button" data-bs-target="#carouselMapas" data-bs-slide-to="7"></button>
-                    <button type="button" data-bs-target="#carouselMapas" data-bs-slide-to="8"></button>
-                    <button type="button" data-bs-target="#carouselMapas" data-bs-slide-to="9"></button>
-                </div>
-
-
-                <div class="carousel-inner text-center">
+        <main id="main_mapas">
+            <div id="mapas" class="text-center bg-black rounded-2 pt-5 pb-4 my-4 w-100">
                 <!-- ASCENT -->
-                <div class="carousel-item active">
-                    <div class="col-12 col-md-8 col-lg-6 mx-auto position-relative">
-                        <img src="img/mapas/ascent/ascent.jpg" class="img-fluid rounded-3 shadow" alt="Ascent">
-                        <div class="position-absolute bottom-0 start-0 w-100 text-light p-4 bg-black bg-opacity-50">
-                            <h2>Ascent</h2>
-                            <ul class="list-unstyled mb-0 fs-4">
-                                <li>Italia</li>
-                                <li>2 sites</li>
-                                <li>Puertas interactivas</li>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="mapa col-12 col-md-8 col-lg-6 mx-auto position-relative">
+                    <p class="text-light text-center fs-3 mb-0">Ascent</p>
+                    <img src="img/mapas/ascent/ascent.jpg" class="img-fluid rounded-3" alt="Ascent">
+                    <ul class="list-unstyled m-0 fs-4 text-light">
+                        <li>Italia</li>
+                        <li>2 sites</li>
+                        <li>Puertas interactivas</li>
+                    </ul>
                 </div>
 
                 <!-- BIND -->
-                <div class="carousel-item">
-                    <div class="col-12 col-md-8 col-lg-6 mx-auto position-relative">
-                        <img src="img/mapas/bind/bind.jpg" class="img-fluid rounded-3 shadow" alt="Bind">
-                        <div class="position-absolute bottom-0 start-0 w-100 text-light p-4 bg-black bg-opacity-50 ">
-                            <h2>Bind</h2>
-                            <ul class="list-unstyled mb-0 fs-4">
-                                <li>Reino de Marruecos</li>
-                                <li>2 sites</li>
-                                <li>Teletransportadores</li>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="mapa col-12 col-md-8 col-lg-6 mx-auto position-relative">
+                    <p class="text-light text-center fs-4">Bind</p>
+                    <img src="img/mapas/bind/bind.jpg" class="img-fluid rounded-3 shadow" alt="Bind">
+                    <ul class="list-unstyled mb-0 fs-4 text-light">
+                        <li>Reino de Marruecos</li>
+                        <li>2 sites</li>
+                        <li>Teletransportadores</li>
+                    </ul>
                 </div>
 
                 <!-- BREEZE -->
-                <div class="carousel-item">
-                    <div class="col-12 col-md-8 col-lg-6 mx-auto position-relative">
-                        <img src="img/mapas/breeze/breeze.webp" class="img-fluid rounded-3 shadow" alt="Breeze">
-                        <div class="position-absolute bottom-0 start-0 w-100 text-light p-4 bg-black bg-opacity-50">
-                            <h2>Breeze</h2>
-                            <ul class="list-unstyled mb-0 fs-4">
-                                <li>Triángulo de las Bermudas</li>
-                                <li>2 sites</li>
-                                <li>Espacios abiertos y largas distancias</li>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="mapa col-12 col-md-8 col-lg-6 mx-auto position-relative">
+                    <p class="text-light text-center fs-4">Breeze</p>
+                    <img src="img/mapas/breeze/breeze.webp" class="img-fluid rounded-3 shadow" alt="Breeze">
+                    <ul class="list-unstyled mb-0 fs-4 text-light">
+                        <li>Triángulo de las Bermudas</li>
+                        <li>2 sites</li>
+                        <li>Espacios abiertos y largas distancias</li>
+                    </ul>
                 </div>
 
                 <!-- HAVEN -->
-                <div class="carousel-item">
-                    <div class="col-12 col-md-8 col-lg-6 mx-auto position-relative">
-                        <img src="img/mapas/haven/haven.jpg" class="img-fluid rounded-3 shadow" alt="Haven">
-                        <div class="position-absolute bottom-0 start-0 w-100 text-light p-4 bg-black bg-opacity-50">
-                            <h2>Haven</h2>
-                            <ul class="list-unstyled mb-0 fs-4">
-                                <li>Bután</li>
-                                <li>3 sites</li>
-                                <li>Cada sitio de plantado tiene una formula adversa.</li>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="mapa col-12 col-md-8 col-lg-6 mx-auto position-relative">
+                    <p class="text-light text-center fs-4">Haven</p>
+                    <img src="img/mapas/haven/haven.jpg" class="img-fluid rounded-3 shadow" alt="Haven">
+                    <ul class="list-unstyled m-0 fs-4 text-light">
+                        <li>Bután</li>
+                        <li>3 sites</li>
+                        <li>Cada sitio de plantado tiene una formula adversa.</li>
+                    </ul>
                 </div>
 
                 <!-- SPLIT -->
-                <div class="carousel-item">
-                    <div class="col-12 col-md-8 col-lg-6 mx-auto position-relative">
-                        <img src="img/mapas/split/split.jpg" class="img-fluid rounded-3 shadow" alt="Split">
-                        <div class="position-absolute bottom-0 start-0 w-100 text-light p-4 bg-black bg-opacity-50">
-                            <h2>Split</h2>
-                            <ul class="list-unstyled mb-0 fs-4">
-                                <li>Japón</li>
-                                <li>2 sites</li>
-                                <li>Control vertical y cuerdas</li>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="mapa col-12 col-md-8 col-lg-6 mx-auto position-relative">
+                    <p class="text-light text-center fs-4">Split</p>
+                    <img src="img/mapas/split/split.jpg" class="img-fluid rounded-3 shadow" alt="Split">
+                    <ul class="list-unstyled mb-0 fs-4 text-light">
+                        <li>Japón</li>
+                        <li>2 sites</li>
+                        <li>Control vertical y cuerdas</li>
+                    </ul>
                 </div>
 
                 <!-- FRACTURE -->
-                <div class="carousel-item">
-                    <div class="col-12 col-md-8 col-lg-6 mx-auto position-relative">
-                        <img src="img/mapas/fracture/fracture.webp" class="img-fluid rounded-3 shadow" alt="Fracture">
-                        <div class="position-absolute bottom-0 start-0 w-100 text-light p-4 bg-black bg-opacity-50">
-                            <h2>Fracture</h2>
-                            <ul class="list-unstyled mb-0 fs-4">
-                                <li>Nuevo México</li>
-                                <li>2 sites</li>
-                                <li>Spawn dividido en dos lados</li>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="mapa col-12 col-md-8 col-lg-6 mx-auto position-relative">
+                    <p class="text-light text-center fs-4">Fracture</p>
+                    <img src="img/mapas/fracture/fracture.webp" class="img-fluid rounded-3 shadow" alt="Fracture">
+                    <ul class="list-unstyled mb-0 fs-4 text-light">
+                        <li>Nuevo México</li>
+                        <li>2 sites</li>
+                        <li>Spawn dividido en dos lados</li>
+                    </ul>
                 </div>
 
                 <!-- ICEBOX -->
-                <div class="carousel-item">
-                    <div class="col-12 col-md-8 col-lg-6 mx-auto position-relative">
-                        <img src="img/mapas/icebox/icebox.jpg" class="img-fluid rounded-3 shadow" alt="Icebox">
-                        <div class="position-absolute bottom-0 start-0 w-100 text-light p-4 bg-black bg-opacity-50">
-                            <h2>Icebox</h2>
-                            <ul class="list-unstyled mb-0 fs-4">
-                                <li>Rusia</li>
-                                <li>2 sites</li>
-                                <li>Verticalidad y tirolesas</li>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="mapa col-12 col-md-8 col-lg-6 mx-auto position-relative">
+                    <p class="text-light text-center fs-4">Icebox</p>
+                    <img src="img/mapas/icebox/icebox.jpg" class="img-fluid rounded-3 shadow" alt="Icebox">
+                    <ul class="list-unstyled mb-0 fs-4 text-light">
+                        <li>Rusia</li>
+                        <li>2 sites</li>
+                        <li>Verticalidad y tirolesas</li>
+                    </ul>
                 </div>
 
                 <!-- PEARL -->
-                <div class="carousel-item">
-                    <div class="col-12 col-md-8 col-lg-6 mx-auto position-relative">
-                        <img src="img/mapas/pearl/pearl.webp" class="img-fluid rounded-3 shadow" alt="Pearl">
-                        <div class="position-absolute bottom-0 start-0 w-100 text-light p-4 bg-black bg-opacity-50">
-                            <h2>Pearl</h2>
-                            <ul class="list-unstyled mb-0 fs-4">
-                                <li>Portugal (Lisboa Omega)</li>
-                                <li>2 sites</li>
-                                <li>Espacios abiertos y largas distancias</li>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="mapa col-12 col-md-8 col-lg-6 mx-auto position-relative">
+                    <p class="text-light text-center fs-4">Pearl</p>
+                    <img src="img/mapas/pearl/pearl.webp" class="img-fluid rounded-3 shadow" alt="Pearl">
+                    <ul class="list-unstyled mb-0 fs-4 text-light">
+                        <li>Portugal (Lisboa Omega)</li>
+                        <li>2 sites</li>
+                        <li>Espacios abiertos y largas distancias</li>
+                    </ul>
                 </div>
 
                 <!-- LOTUS -->
-                <div class="carousel-item">
-                    <div class="col-12 col-md-8 col-lg-6 mx-auto position-relative">
-                        <img src="img/mapas/lotus/lotus.jpg" class="img-fluid rounded-3 shadow" alt="Lotus">
-                        <div class="position-absolute bottom-0 start-0 w-100 text-light p-4 bg-black bg-opacity-50">
-                            <h2>Lotus</h2>
-                            <ul class="list-unstyled mb-0 fs-4">
-                                <li>India</li>
-                                <li>3 sites</li>
-                                <li>Puertas giratorias y puertas destructibles</li>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="mapa col-12 col-md-8 col-lg-6 mx-auto position-relative">
+                    <p class="text-light text-center fs-4">Lotus</p>
+                    <img src="img/mapas/lotus/lotus.jpg" class="img-fluid rounded-3 shadow" alt="Lotus">
+                    <ul class="list-unstyled mb-0 fs-4 text-light">
+                        <li>India</li>
+                        <li>3 sites</li>
+                        <li>Puertas giratorias y puertas destructibles</li>
+                    </ul>
                 </div>
 
                 <!-- SUNSET -->
-                <div class="carousel-item">
-                    <div class="col-12 col-md-8 col-lg-6 mx-auto position-relative">
-                        <img src="img/mapas/sunset/sunset-1.jpg" class="img-fluid rounded-3 shadow" alt="Sunset">
-                        <div class="position-absolute bottom-0 start-0 w-100 text-light p-4 bg-black bg-opacity-50">
-                            <h2>Sunset</h2>
-                            <ul class="list-unstyled mb-0 fs-4">
-                                <li>Los Ángeles</li>
-                                <li>2 sites</li>
-                                <li>Puertas interactivas</li>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="mapa col-12 col-md-8 col-lg-6 mx-auto position-relative">
+                    <p class="text-light text-center fs-4">Sunset</p>
+                    <img src="img/mapas/sunset/sunset-1.jpg" class="img-fluid rounded-3 shadow" alt="Sunset">
+                    <ul class="list-unstyled mb-0 fs-4 text-light">
+                        <li>Los Ángeles</li>
+                        <li>2 sites</li>
+                        <li>Puertas interactivas</li>
+                    </ul>
                 </div>
-
+                <div class="d-flex flex-row gap-4 justify-content-center mt-5 mb-0">
+                    <button type="button" id="pasarImagenIzq"><img src="img/logos/izquierda.png" alt="left"></button>
+                    <button type="button" id="pasarImagenDer"><img src="img/logos/derecha.png" alt="right"></button>
                 </div>
-                <!-- Controles -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselMapas" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </button>
-
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselMapas" data-bs-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </button>
-
             </div>
+        
         </main>
     </div>
 
-    <footer class="d-flex flex-column align-items-center bg-dark bg-gradient pt-3 w-100">
-        <p class="text-white fs-5 text-center">Para más información, consultas u observaciones, contactarse al mail <a href="mailto:lautaro.soriano@hotmail.com" class="text-primary hover">lautaro.soriano@hotmail.com</a> o puede visitar la página del <a href="dev.html">desarrollador</a>.</p>
+    <footer class="d-flex flex-column align-self-end">
+        <div class="d-flex flex-column align-items-center bg-dark bg-gradient pt-3 w-100">
+            <p class="text-white fs-5 text-center">Para más información, consultas u observaciones, contactarse al mail <a href="mailto:lautaro.soriano@hotmail.com" class="text-primary hover">lautaro.soriano@hotmail.com</a> o puede visitar la página del <a href="dev.html">desarrollador</a>.</p>
+        </div>
     </footer>
+
+    <script src="js/mapas_slide.js"></script>
 </body>
 </html>
