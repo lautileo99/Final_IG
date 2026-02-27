@@ -150,3 +150,26 @@ p{
     border: solid green 1px;
     display: none;
 }
+
+.ligast2 a:link{
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    color:white;
+}
+.ligast2 a:hover{
+    background-color: aqua;
+    color:black;
+}
+
+#gamechangerslist li{
+    color: white;
+}
+
+.dpi:link{
+    text-decoration: none;
+    color: white;
+}
+.dpi:hover{
+    background-color: aliceblue;
+    color: blue;
+}
