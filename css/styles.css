@@ -92,15 +92,6 @@ p{
 #cuchillo{
     display: none;
 }
-#btn_cuchillo{
-    background-color: rgba(0, 0, 0, 0);
-    border: none;
-    color: white;
-}
-#btn_cuchillo:hover{
-    color: crimson;
-    text-decoration: underline;
-}
 
 .equipos img{
     max-width: 32px;

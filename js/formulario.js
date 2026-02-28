@@ -36,16 +36,22 @@ boton.addEventListener("click", e=> {
     let regexpNum = /^[0-9\s-]{10,15}$/;
 
     if(nombre.value==="" || !regexpNombre.test(nombre.value)){
-        formulario.style.border="red solid 1px";
+        formulario.style.border = "red solid 1px";
+        nombre.style.border="red solid 1px";
         alert("Campo 'Nombre y Apellido' sin completar o con números, ingresar solo letras.");
     }else if(email.value==="" || !regexpEmail.test(email.value)){
-        formulario.style.border="red solid 1px";
+        formulario.style.border = "red solid 1px";
+        email.style.border="red solid 1px";
         alert("Campo 'email' sin completar o no válido, por favor ingresar un email correcto.");
     }else if(numero.value==="" || !regexpNum.test(numero.value)){
-        formulario.style.border="red solid 1px";
+        formulario.style.border = "red solid 1px";
+        numero.style.border="red solid 1px";
         alert("Campo 'Numero de teléfono' sin completar o con letras, solo números por favor.");
     }else{
         formulario.style.border="green solid 1px";
+        nombre.style.border="green solid 1px";
+        email.style.border="green solid 1px";
+        numero.style.border="green solid 1px";
         nombre.value = "";
         email.value = "";
         numero.value = "";

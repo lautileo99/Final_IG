@@ -11,6 +11,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/p5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/addons/p5.sound.min.js"></script>
 </head>
 <body>
     <div class="container-fluid min-vh-100">
@@ -28,18 +31,17 @@
         </header>
         
         <main class="d-flex flex-column align-items-center w-100 p-3">
-            <section class="d-flex flex-column align-items-center bg-black bg-opacity-50 rounded text-light w-100">
+            <section class="d-flex flex-column align-items-center bg-black bg-opacity-50 rounded text-light w-100 p-4">
                 <p class="fs-4 text-center">En esta sección les presentamos <strong class="text-danger">Aimtech:</strong> el juego. <br> Este videojuego está pensado para que el usuario pueda calentar la puntería antes de entrar al Valorant. <br> El mismo también ayudará a calcular la <strong class="text-primary">sensibilidad</strong> del mouse, algo importantisimo para dominar la mecánica principal del Valorant: los disparos.<br>
                 Para entender el sistema de sensibilidad, es importante saber sobre lo siguiente:</p>
                 <a href="dpi.html" class="dpi d-flex flex-column align-items-center w-25 border border-white rounded-2 p-3">
                     <h2 class="fs-2">DPI</h2>
                 </a>
-                <p class="fs-4 text-center mt-4">Toque <strong class="text-danger">Start</strong> para comenzar.<br>En la <strong class="text-warning">Configuración</strong> puede modificar la sensibilidad del mouse. </p>
+                <p class="fs-4 text-center mt-4">Toque <strong class="text-danger">Start</strong> para comenzar.</p>
             </section>
-            <section class="m-2 bg-black bg-opacity-50 rounded w-100">
-                <div class="p-4 text-light">
-                        Colocar juego acá
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia quae molestiae officia, voluptatem aut tempore dignissimos enim alias adipisci totam, impedit odit et aperiam repellat fugit quod aliquid quisquam porro! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi suscipit voluptatum odio vitae eligendi recusandae perspiciatis consequatur. Maiores eius nam atque cupiditate sed. Hic obcaecati quibusdam numquam, aut inventore nobis.
+            <section class="d-flex flex-row justify-content-center m-2 bg-black bg-opacity-50 rounded w-100 p-4">
+                <div id="juego">
+                       
                 </div>
             </section>
         </main>
@@ -50,5 +52,7 @@
             <p class="text-white fs-5 text-center">Para más información, consultas u observaciones, contactarse al mail <a href="mailto:lautaro.soriano@hotmail.com" class="text-primary hover">lautaro.soriano@hotmail.com</a> o puede visitar la página del <a href="dev.html">desarrollador</a>.</p>
         </div>
     </footer>
+
+    <script src="js/sketch.js"></script>
 </body>
 </html>

@@ -7,11 +7,13 @@ btnCuchillo.addEventListener("click", e => {
     latch = !latch;
 
     if(latch){
-    cuchillo.style.display = "flex";
-    cuchillo.style.flexDirection = "column";
-    cuchillo.style.alignItems = "center";
+        btnCuchillo.innerHTML = "Ocultar Cuchillo";
+        cuchillo.style.display = "flex";
+        cuchillo.style.flexDirection = "column";
+        cuchillo.style.alignItems = "center";
     }else{
-    cuchillo.style.display = "none";
+        cuchillo.style.display = "none";
+        btnCuchillo.innerHTML = "Mostrar Cuchillo";
     }
 });
 
