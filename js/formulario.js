@@ -2,6 +2,7 @@
 let nombre= document.querySelector("#nombre");
 let email = document.querySelector("#email");
 let numero = document.querySelector("#telefono");
+let mensaje = document.querySelector("#mensaje");
 let formulario = document.querySelector("#formulario");
 
 //Tomo el cartel de datos ingresados correctamente.
@@ -9,9 +10,7 @@ let success = document.querySelector(".formulario_ok");
 //Tomo el botón submit
 let boton = document.querySelector("#submit");
 
-boton.addEventListener("click", e=> {
-    e.preventDefault();
-
+boton.addEventListener("click", function() {
     /* Expresión regular textos:
         ^ : Empieza.
         /[]$/ : Carácteres propios de las expresiones.
@@ -55,6 +54,7 @@ boton.addEventListener("click", e=> {
         nombre.value = "";
         email.value = "";
         numero.value = "";
+        mensaje.value = "";
         success.style.display = "block";
         setTimeout(mostrarCartel,5000);
     }
