@@ -289,10 +289,6 @@ p{
         font-size: 60% !important;
         
     }
-    /*VCL*/
-
-    /*Gamechanger*/
-
 
     /*DEV*/
     #dev_fondo main{
@@ -305,6 +301,10 @@ p{
         font-size: 76% !important;
         margin-top: 2em;
         width: 100%;
+    }
+
+    #dev_fondo p a{
+        font-size: 80% !important;
     }
     #dev_fondo img{
         width: 50vw !important;
