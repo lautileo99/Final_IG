@@ -205,7 +205,8 @@ p{
         align-items: center !important;
     }
     #seccion_juego img{
-        height: 40vh;
+        width: 60vw !important;
+        height: 34vh !important;
     }
 
     /*Lore*/
