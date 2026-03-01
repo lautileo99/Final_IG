@@ -100,7 +100,7 @@ p{
     background-color: rgba(6, 6, 97, 0.732);
 }
 #seccion_armas img{
-    max-width: 340px;
+    max-width: 20vw;
 }
 #cuchillo{
     display: none;
