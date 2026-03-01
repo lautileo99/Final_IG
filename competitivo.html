@@ -13,14 +13,28 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container-fluid">
-        <nav class="mt-2 fs-4 p-4 d-flex flex-row justify-content-around text-light bg-black bg-opacity-50 border border-secondary rounded-2">
-            <div><a href="introduccion.html">Introducción</a></div>
-            <div><a href="juego.html">Juego</a></div>
-            <div><a href="lore.html">Lore</a></div>
-            <div><a href="aimtech.html">Aimtech</a></div>
-            <div><a href="competitivo.html">Competitivo</a></div>
-            <div><a href="formulario.html">Formulario</a></div>
+    <div id="competitivo" class="container-fluid">
+        <nav>
+            <div id="desktop" class="d-flex flex-row justify-content-around mt-2 fs-4 p-4 text-light bg-black bg-opacity-50 border border-secondary rounded-2">
+                <div><a href="introduccion.html">Introducción</a></div>
+                <div><a href="juego.html">Juego</a></div>
+                <div><a href="lore.html">Lore</a></div>
+                <div><a href="aimtech.html">Aimtech</a></div>
+                <div><a href="#competitivo">Competitivo</a></div>
+                <div><a href="formulario.html">Formulario</a></div>
+            </div>
+            
+             <!-- Botón hamburguesa -->
+            <button id="btnHamburguesa" class="btn btn-light p-2 w-100">☰</button>
+
+            <div id="mobile" class="flex-column align-items-center bg-black bg-opacity-50">
+                <div class="m-2"><a href="introduccion.html">Introducción</a></div>
+                <div class="m-2"><a href="juego.html">Juego</a></div>
+                <div class="m-2"><a href="lore.html">Lore</a></div>
+                <div class="m-2"><a href="aimtech.html">Aimtech</a></div>
+                <div class="m-2"><a href="#competitivo">Competitivo</a></div>
+                <div class="m-2"><a href="formulario.html">Formulario</a></div>
+            </div>
         </nav>
         <header class="m-4 text-light text-center">
             <h1>Un juego tactical shooter basado en personajes.</h1>
@@ -29,24 +43,24 @@
         <main class="m-3 d-flex flex-column align-items-center">
             <section class="border border-danger bg-black bg-opacity-50 w-100 d-flex flex-column align-items-center">
                 <h2 class="fs-2 text-danger mt-3">VCT</h2>
-                <h2 class="fs-4 text-light mb-3">Valorant Champions Tour</h2>
+                <h3 class="fs-4 text-light mb-3">Valorant Champions Tour</h3>
                 <p class="text-light fs-4 mx-2 w-75">VCT significa Valorant Champions Tour y se refiere al nivel más alto (o Nivel 1) de los esports de Valorant. Los eventos se dividen en dos grupos: Ligas Regionales y Eventos Internacionales, normalmente llamados eventos <strong class="text-primary"> Masters</strong> o eventos  <strong class="text-primary">Champions</strong>.</p>
             </section>
 
             <div class="border border-primary rounded-2 p-2 m-4 w-100 bg-black bg-opacity-50">
-                <h2 class="text-light fs-3 text-center mt-3 mb-0">Regiones</h2>
+                
                 <p class="text-secondary text-center fs-4">Haga <strong class="text-primary">click</strong>  para conocer las organizaciones participantes y su nacionalidad.</p>
-                <article class="d-flex justify-content-around align-items-start mb-3">
+                <div id="div_compe" class="d-flex justify-content-around align-items-start mb-3">
                     
                     <!-- COLUMNA Americas -->
-                        <div class="d-flex flex-column align-items-center w-50 mt-3">
+                        <div class=" d-flex flex-column align-items-center w-50 mt-3">
                             <div class="d-flex justify-content-center py-4 border rounded w-50 pt-3 bg-white bg-gradient"
-                                type="button"
+                                
                                 data-bs-toggle="collapse"
                                 data-bs-target="#collapseAmericas">
                                 <img src="img/misc/vct_americas.png" class="img_btn" alt="labendita">
                             </div>
-                            <div class="collapse mt-3 w-100 bg-black bg-opacity-50 p-4 rounded" id="collapseAmericas">
+                            <div class="div_equipos collapse mt-3 w-100 bg-black bg-opacity-50 p-4 rounded" id="collapseAmericas">
                                 <p class="text-light fs-4">
                                     La VCT Americas engloba países de america del norte y latinoamerica.<br>
                                     Los equipos de VCT Americas son:
@@ -94,12 +108,12 @@
                         <!-- COLUMNA EMEA -->
                         <div class="d-flex flex-column align-items-center w-50 mt-3">
                             <div class="d-flex justify-content-center py-4 border rounded w-50 pt-3 bg-white bg-gradient"
-                                type="button"
+                                
                                 data-bs-toggle="collapse"
                                 data-bs-target="#collapseEmea">
                                 <img src="img/misc/vct_emea.png" class="img_btn" alt="memea">
                             </div>
-                            <div class="collapse mt-3 w-100 bg-black bg-opacity-50 p-4 rounded" id="collapseEmea">
+                            <div class="div_equipos collapse mt-3 w-100 bg-black bg-opacity-50 p-4 rounded" id="collapseEmea">
                                 <p class="text-light fs-4">
                                     La VCT EMEA engloba países de europa, asia del este y africa.<br>
                                     Los equipos de VCT EMEA son:
@@ -148,13 +162,13 @@
                         <!-- COLUMNA APAC -->
                         <div class="d-flex flex-column align-items-center w-25 mt-3">
                             <div class="d-flex justify-content-center py-4 border rounded w-50 pt-3 bg-white bg-gradient"
-                                type="button"
+                                
                                 data-bs-toggle="collapse"
                                 data-bs-target="#collapsePacific">
                                 <img src="img/misc/vct_apac.png" class="img_btn" alt="pacific">
                             </div>
 
-                            <div class="collapse mt-3 w-100 bg-black bg-opacity-50 p-4 rounded" id="collapsePacific">
+                            <div class="div_equipos collapse mt-3 w-100 bg-black bg-opacity-50 p-4 rounded" id="collapsePacific">
                                 <p class="text-light fs-4">
                                     La VCT Pacific engloba países de Asia y Oceanía.<br>
                                     Los equipos de VCT Pacific son:
@@ -204,13 +218,13 @@
                         <!-- COLUMNA CHINA -->
                         <div class="d-flex flex-column align-items-center w-25 mt-3">
                             <div class="d-flex justify-content-center py-4 border rounded w-50 pt-3 bg-white bg-gradient"
-                                type="button"
+                                
                                 data-bs-toggle="collapse"
                                 data-bs-target="#collapseChina">
                                 <img src="img/misc/vct_china.png" class="img_btn" alt="china">
                             </div>
 
-                            <div class="collapse mt-3 w-100 bg-black bg-opacity-50 p-4 rounded" id="collapseChina">
+                            <div class="div_equipos collapse mt-3 w-100 bg-black bg-opacity-50 p-4 rounded" id="collapseChina">
                                 <p class="text-light fs-4">
                                     La VCT China reúne organizaciones del circuito competitivo chino.<br>
                                     Los equipos de VCT China son:
@@ -256,8 +270,8 @@
                                 </ul>
                             </div>
                         </div>
-                </article>
-            </div>
+                    </div>
+                </div>
 
             <div class="d-flex flex-column align-items-center bg-black bg-opacity-50 border border-white rounded-2 p-2 m-4 w-100">
                 <h2 class="text-light fs-3 m-3">Otras ligas</h2>
@@ -279,5 +293,6 @@
         <p class="text-white fs-5 text-center">Para más información, consultas u observaciones, contactarse al mail <a href="mailto:lautaro.soriano@hotmail.com" class="text-primary hover">lautaro.soriano@hotmail.com</a> o puede visitar la página del <a href="dev.html">desarrollador</a>.</p>
     </footer>
 
+    <script src="js/menuHamburguesa.js"></script>
 </body>
 </html>

@@ -17,13 +17,27 @@
 </head>
 <body>
     <div class="container-fluid min-vh-100">
-        <nav class="mt-2 fs-4 p-4 d-flex flex-row justify-content-around text-light bg-black bg-opacity-50 border border-secondary rounded-2">
-            <div><a href="introduccion.html">Introducción</a></div>
-            <div><a href="juego.html">Juego</a></div>
-            <div><a href="lore.html">Lore</a></div>
-            <div><a href="#aimtech">Aimtech</a></div>
-            <div><a href="competitivo.html">Competitivo</a></div>
-            <div><a href="formulario.html">Formulario</a></div>
+        <nav>
+            <div id="desktop" class="d-flex flex-row justify-content-around mt-2 fs-4 p-4 text-light bg-black bg-opacity-50 border border-secondary rounded-2">
+                <div><a href="introduccion.html">Introducción</a></div>
+                <div><a href="juego.html">Juego</a></div>
+                <div><a href="lore.html">Lore</a></div>
+                <div><a href="#aimtech">Aimtech</a></div>
+                <div><a href="competitivo.html">Competitivo</a></div>
+                <div><a href="formulario.html">Formulario</a></div>
+            </div>
+            
+             <!-- Botón hamburguesa -->
+            <button id="btnHamburguesa" class="btn btn-light p-2 w-100">☰</button>
+
+            <div id="mobile" class="flex-column align-items-center bg-black bg-opacity-50">
+                <div class="m-2"><a href="introduccion.html">Introducción</a></div>
+                <div class="m-2"><a href="juego.html">Juego</a></div>
+                <div class="m-2"><a href="lore.html">Lore</a></div>
+                <div class="m-2"><a href="#aimtech">Aimtech</a></div>
+                <div class="m-2"><a href="competitivo.html">Competitivo</a></div>
+                <div class="m-2"><a href="formulario.html">Formulario</a></div>
+            </div>
         </nav>
 
         <header class="m-4 text-light bg-black bg-opacity-50 rounded-2 p-3">
@@ -32,14 +46,16 @@
         
         <main class="d-flex flex-column align-items-center w-100 p-3">
             <section class="d-flex flex-column align-items-center bg-black bg-opacity-50 rounded text-light w-100 p-4">
-                <p class="fs-4 text-center">En esta sección les presentamos <strong class="text-danger">Aimtech:</strong> el juego. <br> Este videojuego está pensado para que el usuario pueda calentar la puntería antes de entrar al Valorant. <br> El mismo también ayudará a calcular la <strong class="text-primary">sensibilidad</strong> del mouse, algo importantisimo para dominar la mecánica principal del Valorant: los disparos.<br>
-                Para entender el sistema de sensibilidad, es importante saber sobre lo siguiente:</p>
+                <h2 class="fs-3 text-center text-light">En esta sección les presentamos <strong class="text-danger">Aimtech:</strong> el juego. </h2><br> 
+                <p class="fs-4 text-center">Este videojuego está pensado para que el usuario pueda calentar la puntería antes de entrar al Valorant. <br> El mismo también ayudará a calcular la <strong class="text-primary">sensibilidad</strong> del mouse, algo importantisimo para dominar la mecánica principal del Valorant: los disparos.<br></p>
+                <p class="fs-4 text-center">Para entender el sistema de sensibilidad, es importante saber sobre lo siguiente:</p>
                 <a href="dpi.html" class="dpi d-flex flex-column align-items-center w-25 border border-white rounded-2 p-3">
                     <h2 class="fs-2">DPI</h2>
                 </a>
-                <p class="fs-4 text-center mt-4">Toque <strong class="text-danger">Start</strong> para comenzar.</p>
+                
             </section>
-            <section class="d-flex flex-row justify-content-center m-2 bg-black bg-opacity-50 rounded w-100 p-4">
+            <section class="d-flex flex-column align-items-center m-2 bg-black bg-opacity-50 rounded w-100 p-4">
+                <h2 class="fs-3 text-center text-light mb-4">Juego</h2>
                 <div id="juego">
                        
                 </div>
@@ -54,5 +70,6 @@
     </footer>
 
     <script src="js/sketch.js"></script>
+    <script src="js/menuHamburguesa.js"></script>
 </body>
 </html>

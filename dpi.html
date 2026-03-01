@@ -14,13 +14,27 @@
 </head>
 <body>
     <div class="container-fluid min-vh-100">
-        <nav class="mt-2 fs-4 p-4 d-flex flex-row justify-content-around text-light bg-black bg-opacity-50 border border-secondary rounded-2">
-            <div><a href="introduccion.html">Introducción</a></div>
-            <div><a href="juego.html">Juego</a></div>
-            <div><a href="lore.html">Lore</a></div>
-            <div><a href="aimtech.html">Aimtech</a></div>
-            <div><a href="competitivo.html">Competitivo</a></div>
-            <div><a href="formulario.html">Formulario</a></div>
+        <nav>
+            <div id="desktop" class="d-flex flex-row justify-content-around mt-2 fs-4 p-4 text-light bg-black bg-opacity-50 border border-secondary rounded-2">
+                <div><a href="introduccion.html">Introducción</a></div>
+                <div><a href="juego.html">Juego</a></div>
+                <div><a href="lore.html">Lore</a></div>
+                <div><a href="aimtech.html">Aimtech</a></div>
+                <div><a href="competitivo.html">Competitivo</a></div>
+                <div><a href="formulario.html">Formulario</a></div>
+            </div>
+            
+             <!-- Botón hamburguesa -->
+            <button id="btnHamburguesa" class="btn btn-light p-2 w-100">☰</button>
+
+            <div id="mobile" class="flex-column align-items-center bg-black bg-opacity-50">
+                <div class="m-2"><a href="introduccion.html">Introducción</a></div>
+                <div class="m-2"><a href="juego.html">Juego</a></div>
+                <div class="m-2"><a href="lore.html">Lore</a></div>
+                <div class="m-2"><a href="aimtech.html">Aimtech</a></div>
+                <div class="m-2"><a href="competitivo.html">Competitivo</a></div>
+                <div class="m-2"><a href="formulario.html">Formulario</a></div>
+            </div>
         </nav>
         <header class="m-4 text-light text-center">
             <h1>DPI</h1>
@@ -34,7 +48,7 @@
                     <br>
                     <strong class="text-primary">A mayor DPI, más rápido se mueve el cursor</strong>,  con menos movimiento físico. Generalmente, un DPI alto (1600+) es ideal para pantallas de alta resolución, mientras que un DPI bajo (400-800) ofrece mayor precisión para juegos de disparos. Se puede ajustar mediante botones dedicados, software del fabricante o configuraciones de
                 </p>
-                <iframe width="660" height="425" class="rounded bg-black p-2 m-4" src="https://www.youtube.com/embed/Zc3Se3BcehE?si=mDKec2OszhxZe3G0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe class="rounded bg-black p-2 m-4" src="https://www.youtube.com/embed/Zc3Se3BcehE?si=mDKec2OszhxZe3G0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
                 <ul id="gamechangerslist" class="w-75">
                     <li><p class="fs-4 text-light"><strong class="text-white">Ratones:</strong> el DPI indica la sensibilidad del sensor. Un DPI alto mueve el cursor más rápido con menos desplazamiento físico.</p></li>
@@ -55,5 +69,7 @@
     <footer class="d-flex flex-column align-items-center bg-dark bg-gradient pt-3 w-100">
         <p class="text-white fs-5 text-center">Para más información, consultas u observaciones, contactarse al mail <a href="mailto:lautaro.soriano@hotmail.com" class="text-primary hover">lautaro.soriano@hotmail.com</a> o puede visitar la página del <a href="dev.html">desarrollador</a>.</p>
     </footer>
+
+    <script src="js/menuHamburguesa.js"></script>
 </body>
 </html>

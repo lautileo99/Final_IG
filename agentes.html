@@ -14,30 +14,47 @@
 </head>
 <body>
     <div class="container-fluid">
-        <nav class="mt-2 fs-4 p-4 d-flex flex-row justify-content-around text-light bg-black bg-opacity-50 border border-secondary rounded-2">
-            <div><a href="introduccion.html">Introducción</a></div>
-            <div><a href="juego.html">Juego</a></div>
-            <div><a href="lore.html">Lore</a></div>
-            <div><a href="aimtech.html">Aimtech</a></div>
-            <div><a href="competitivo.html">Competitivo</a></div>
-            <div><a href="formulario.html">Formulario</a></div>
+        <nav>
+            <div id="desktop" class="d-flex flex-row justify-content-around mt-2 fs-4 p-4 text-light bg-black bg-opacity-50 border border-secondary rounded-2">
+                <div><a href="introduccion.html">Introducción</a></div>
+                <div><a href="juego.html">Juego</a></div>
+                <div><a href="lore.html">Lore</a></div>
+                <div><a href="aimtech.html">Aimtech</a></div>
+                <div><a href="competitivo.html">Competitivo</a></div>
+                <div><a href="formulario.html">Formulario</a></div>
+            </div>
+            
+             <!-- Botón hamburguesa -->
+            <button id="btnHamburguesa" class="btn btn-light p-2 w-100">☰</button>
+
+            <div id="mobile" class="flex-column align-items-center bg-black bg-opacity-50">
+                <div class="m-2"><a href="introduccion.html">Introducción</a></div>
+                <div class="m-2"><a href="juego.html">Juego</a></div>
+                <div class="m-2"><a href="lore.html">Lore</a></div>
+                <div class="m-2"><a href="aimtech.html">Aimtech</a></div>
+                <div class="m-2"><a href="competitivo.html">Competitivo</a></div>
+                <div class="m-2"><a href="formulario.html">Formulario</a></div>
+            </div>
         </nav>
         
         <header class="m-4 text-light text-center">
             <h1>Los protagonistas del juego</h1>
         </header>
         
+        <div id="panel-habilidades" class="mt-5">
+            <h2 class="text-light text-start">Si desea saber las habilidades del agente, <strong class="text-danger">coloque el cursor</strong> sobre el mismo para obtener información.
+            Como referencia se muestran las teclas del teclado por defecto, las mismas pueden modificarse en los ajustes del juego</h2>
+        </div>
+
         <main id="show" class="container my-5">
-            <div class="row gy-4">      <!--Fila de columnas-->
-                
-                <div id="panel-habilidades" class="mt-5">
-                    <h3 class="text-light text-start">Si desea saber las habilidades del agente, <strong class="text-danger">coloque el cursor</strong>  sobre el mismo para obtener información.
-                    Como referencia se muestran las teclas del teclado por defecto, las mismas pueden modificarse en los ajustes del juego</h3>
-                </div>
+            
+            <div class="row gy-4">      <!--Fila de columnas-->            
                 <div class="col-md-3">
                     <div class="card_agente bg-black bg-opacity-50 rounded overflow-hidden">
                         <p class="text-light text-end fs-5 me-3">Controlador</p>
-                        <img id="astra_img" src="img/agentes/Astra.png" class="agente-img w-100" alt="Astra">
+                        <div>
+                            <img id="astra_img" src="img/agentes/Astra.png" class="agente-img w-100" alt="Astra">
+                        </div>
                         <p class="fs-4 text-black bg-white text-center mb-0">Astra</p>
                         <div class="overlay-habilidades"></div>
                     </div>
@@ -308,5 +325,6 @@
     </footer>
 
     <script src="js/agentes.js"></script>
+    <script src="js/menuHamburguesa.js"></script>
 </body>
 </html>

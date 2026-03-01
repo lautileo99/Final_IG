@@ -11,6 +11,12 @@ footer a:link{
 .header-logo{
     width: 80%;
 }
+
+iframe{
+    width: 660px;
+    height: 425px;
+}
+
 a{
     list-style: none;
     font-family: 'Roboto',sans-serif;
@@ -32,6 +38,13 @@ nav a:hover{
     color: rgb(255, 57, 57);
     border-bottom: solid rgb(255, 57, 57) 1px;
 }
+#mobile{
+    display: none;
+}
+#btnHamburguesa{
+    display: none;
+}
+
 body{
     background-image: url("../img/logos/valorant_fondo.jpg");
     background-size: cover;
@@ -163,4 +176,137 @@ p{
 .dpi:hover{
     background-color: aliceblue;
     color: blue;
+}
+
+@media (max-width: 480px) { 
+
+    /*Barra de navegación*/
+    #desktop{
+        display: none !important; 
+    }
+    #btnHamburguesa{
+        display: block;
+    }
+
+    /*Introducción*/
+    #introduccion main div{
+        display: flex;
+        flex-direction: column;
+    }
+    #introduccion p{
+        width: 70vw !important;
+    }
+    iframe{
+        width: 90%;
+    }
+    /*Juego*/
+    #seccion_juego div{
+        width: 90vw !important;
+        align-items: center !important;
+    }
+    #seccion_juego img{
+        height: 40vh;
+    }
+
+    /*Lore*/
+    #lore main div{
+        flex-direction: column;
+        align-items: center;
+    }
+    #lore main div p{
+        width: 70vw !important;
+    }
+
+     /*Competitivo*/
+    #div_compe{
+        flex-direction: column;
+        align-items: center !important;
+    }
+    #div_compe div{
+        width: 50vw !important;
+    }
+    #div_compe img{
+        width: 20vw;
+        height: 30vh;
+    }
+    #div_compe ul img{
+        height: 10%;
+    }
+    .div_equipos{
+        flex-direction: row !important;
+    }
+
+    /*agentes*/
+    #panel-habilidades h2{
+        font-size: 98%;
+        width: 90%;
+        margin-left: 1em;
+    }
+    #show img{
+        width: 80% !important;
+        height: 90%;
+
+    }
+    #show div:last-child{
+        display: flex;
+        justify-content: center;
+    }
+    .card_agente{
+        flex-direction: column;
+        align-items: center;
+        width: 90vw;
+    }
+
+    /*mapas*/
+    #mapas button{
+        width: 20vw !important;
+        margin-top: 0;
+    }
+
+    /*Modos*/
+    #main_modos p{
+        font-size: 80% !important;
+    }
+
+    .explicacion_modos{
+        width: 100vw !important;
+    }
+
+    /*Arsenal*/
+    #main_armas p,#main_armas strong{
+        font-size: 94% !important;
+    }
+    #main_armas img{
+        width: 80%;
+    }
+    #seccion_armas{
+        width: 100vw !important;
+        gap:0;
+        padding: 0;
+    }
+    #seccion_armas h2,#seccion_armas div p{
+        font-size: 60% !important;
+        
+    }
+    /*VCL*/
+
+    /*Gamechanger*/
+
+
+    /*DEV*/
+    #dev_fondo main{
+        margin:0;
+    }
+    #dev_fondo article{
+        justify-content: space-evenly !important;
+    }
+    #dev_fondo main p{
+        font-size: 76% !important;
+        margin-top: 2em;
+        width: 100%;
+    }
+    #dev_fondo img{
+        width: 50vw !important;
+        margin: 0 !important;
+    }
 }

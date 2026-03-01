@@ -14,19 +14,34 @@
 </head>
 <body>
     <div class="container-fluid min-vh-100">
-        <nav class="mt-2 fs-4 p-4 d-flex flex-row justify-content-around text-light bg-black bg-opacity-50 border border-secondary rounded-2">
-            <div><a href="introduccion.html">Introducción</a></div>
-            <div><a href="juego.html">Juego</a></div>
-            <div><a href="lore.html">Lore</a></div>
-            <div><a href="aimtech.html">Aimtech</a></div>
-            <div><a href="competitivo.html">Competitivo</a></div>
-            <div><a href="formulario.html">Formulario</a></div>
+        <nav>
+            <div id="desktop" class="d-flex flex-row justify-content-around mt-2 fs-4 p-4 text-light bg-black bg-opacity-50 border border-secondary rounded-2">
+                <div><a href="introduccion.html">Introducción</a></div>
+                <div><a href="juego.html">Juego</a></div>
+                <div><a href="lore.html">Lore</a></div>
+                <div><a href="aimtech.html">Aimtech</a></div>
+                <div><a href="competitivo.html">Competitivo</a></div>
+                <div><a href="formulario.html">Formulario</a></div>
+            </div>
+            
+             <!-- Botón hamburguesa -->
+            <button id="btnHamburguesa" class="btn btn-light p-2 w-100">☰</button>
+
+            <div id="mobile" class="flex-column align-items-center bg-black bg-opacity-50">
+                <div class="m-2"><a href="introduccion.html">Introducción</a></div>
+                <div class="m-2"><a href="juego.html">Juego</a></div>
+                <div class="m-2"><a href="lore.html">Lore</a></div>
+                <div class="m-2"><a href="aimtech.html">Aimtech</a></div>
+                <div class="m-2"><a href="competitivo.html">Competitivo</a></div>
+                <div class="m-2"><a href="formulario.html">Formulario</a></div>
+            </div>
         </nav>
         <header class="m-4 text-light text-center">
             <h1>Escenarios</h1>
         </header>
 
         <section class="bg-black bg-opacity-50 rounded-2 p-3 mb-3">
+            <h2 class="text-light text-center fs-3">Mapas</h2>
             <p class="text-light text-center fs-4 mx-3">
                 Los mapas son los escenarios donde se desarrolla la acción. Cada uno tiene un diseño distintivo tanto en la gama de colores y composición conceptual, como también en algunas funcionalidades. Las mismas están pensadas para proporcionar situaciones variadas e irrepetibles.
                 <br><br> A continuación verán una imagen de todos los mapas con una descripción de sus distinciones:
@@ -160,5 +175,6 @@
     </footer>
 
     <script src="js/mapas_slide.js"></script>
+    <script src="js/menuHamburguesa.js"></script>
 </body>
 </html>

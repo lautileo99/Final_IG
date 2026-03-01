@@ -14,30 +14,43 @@
 </head>
 <body id="dev_fondo" class="bg-black bg-gradient">
     <div class="container-fluid">
-        <nav class="mt-2 fs-4 p-4 d-flex flex-row justify-content-around text-light bg-black bg-opacity-50 border border-secondary rounded-2">
-            <div><a href="introduccion.html">Introducción</a></div>
-            <div><a href="juego.html">Juego</a></div>
-            <div><a href="lore.html">Lore</a></div>
-            <div><a href="aimtech.html">Aimtech</a></div>
-            <div><a href="competitivo.html">Competitivo</a></div>
-            <div><a href="formulario.html">Formulario</a></div>
+        <nav>
+            <div id="desktop" class="d-flex flex-row justify-content-around mt-2 fs-4 p-4 text-light bg-black bg-opacity-50 border border-secondary rounded-2">
+                <div><a href="introduccion.html">Introducción</a></div>
+                <div><a href="juego.html">Juego</a></div>
+                <div><a href="lore.html">Lore</a></div>
+                <div><a href="aimtech.html">Aimtech</a></div>
+                <div><a href="competitivo.html">Competitivo</a></div>
+                <div><a href="formulario.html">Formulario</a></div>
+            </div>
+            
+             <!-- Botón hamburguesa -->
+            <button id="btnHamburguesa" class="btn btn-light p-2 w-100">☰</button>
+
+            <div id="mobile" class="flex-column align-items-center bg-black bg-opacity-50">
+                <div class="m-2"><a href="introduccion.html">Introducción</a></div>
+                <div class="m-2"><a href="juego.html">Juego</a></div>
+                <div class="m-2"><a href="lore.html">Lore</a></div>
+                <div class="m-2"><a href="aimtech.html">Aimtech</a></div>
+                <div class="m-2"><a href="competitivo.html">Competitivo</a></div>
+                <div class="m-2"><a href="formulario.html">Formulario</a></div>
+            </div>
         </nav>
         
         <main class="m-3 d-flex flex-column align-items-center">
             <article class="bg-black bg-opacity-50 rounded-2 d-flex flex-row justify-content-around align-items-center">
                 <img id="foto_dev" src="img/misc/dev/dev.jpg" class="w-25 m-5 rounded-2" alt="dev">
-
                 <div class="d-flex flex-column align-items-center">
                     <p class="text-light fs-4 w-75">Mi nombre es <strong class="text-white">Lautaro Soriano.</strong>  <br> Soy programador de sistemas BMS y técnico electrónico. <br> Estudio Licenciatura de Artes Multimediales en la Universidad Nacional de las Artes. <br> Soy un aficionado de los videojuegos. <br>Tambien tengo interés en el cine y la música.</p>
+                    <p class="text-light fs-4 w-75">Materia: <strong class="text-white">Informática General</strong>
+                    </p>
+                    <p class="text-light fs-4 w-75">Año de cursada: <strong class="text-white">2025</strong>
+                    </p>
                     <p class="text-light fs-4 w-75">Email: <a href="mailto:lautaro.soriano@hotmail.com" class="text-primary hover">lautaro.soriano@hotmail.com</a>
                     </p>
-
-                    <p class="text-light fs-4 w-75">Trabajos: <a href="https://github.com/lautileo99" class="text-primary hover">Cuenta de github</a>
+                    <p class="text-light fs-4 w-75">Trabajos: <a target="_blank" href="https://github.com/lautileo99" class="text-primary hover">Cuenta de github</a>
                     </p>
-                    
                 </div>
-                
-
             </article>
         </main>
     </div>
@@ -45,5 +58,7 @@
     <footer class="d-flex flex-column align-items-center bg-dark bg-gradient pt-3 w-100">
         <p class="text-white fs-5 text-center">Para más información, consultas u observaciones, contactarse al mail <a href="mailto:lautaro.soriano@hotmail.com" class="text-primary hover">lautaro.soriano@hotmail.com</a></p>
     </footer>
+
+    <script src="js/menuHamburguesa.js"></script>
 </body>
 </html>

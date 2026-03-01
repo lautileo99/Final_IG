@@ -14,21 +14,35 @@
 </head>
 <body>
     <div class="container-fluid">
-        <nav class="mt-2 fs-4 p-4 d-flex flex-row justify-content-around text-light bg-black bg-opacity-50 border border-secondary rounded-2">
-            <div><a href="introduccion.html">Introducción</a></div>
-            <div><a href="juego.html">Juego</a></div>
-            <div><a href="lore.html">Lore</a></div>
-            <div><a href="aimtech.html">Aimtech</a></div>
-            <div><a href="competitivo.html">Competitivo</a></div>
-            <div><a href="formulario.html">Formulario</a></div>
+        <nav>
+            <div id="desktop" class="d-flex flex-row justify-content-around mt-2 fs-4 p-4 text-light bg-black bg-opacity-50 border border-secondary rounded-2">
+                <div><a href="introduccion.html">Introducción</a></div>
+                <div><a href="juego.html">Juego</a></div>
+                <div><a href="lore.html">Lore</a></div>
+                <div><a href="aimtech.html">Aimtech</a></div>
+                <div><a href="competitivo.html">Competitivo</a></div>
+                <div><a href="formulario.html">Formulario</a></div>
+            </div>
+            
+             <!-- Botón hamburguesa -->
+            <button id="btnHamburguesa" class="btn btn-light p-2 w-100">☰</button>
+
+            <div id="mobile" class="flex-column align-items-center bg-black bg-opacity-50">
+                <div class="m-2"><a href="introduccion.html">Introducción</a></div>
+                <div class="m-2"><a href="juego.html">Juego</a></div>
+                <div class="m-2"><a href="lore.html">Lore</a></div>
+                <div class="m-2"><a href="aimtech.html">Aimtech</a></div>
+                <div class="m-2"><a href="competitivo.html">Competitivo</a></div>
+                <div class="m-2"><a href="formulario.html">Formulario</a></div>
+            </div>
         </nav>
         <header class="m-4 text-light text-center">
             <h1>Un juego tactical shooter basado en personajes.</h1>
         </header>
         
-        <main class="m-3 d-flex flex-column align-items-center">
+        <main id="main_armas" class="m-3 d-flex flex-column align-items-center">
             <div class="m-3 text-center rounded-2 bg-black bg-opacity-50 p-3 w-100">
-                <p class="text-light fs-3">El jugador puede poseer 3 tipos de armas, una pesada, una liviana y una de cuerpo a cuerpo. <br> El arma cuerpo a cuerpo es el <strong class="fs-3 text-white">cuchillo</button> , el cual es el mismo para todos. </p>
+                <p class="text-light fs-3">El jugador puede poseer 3 tipos de armas, una pesada, una liviana y una de cuerpo a cuerpo. <br> El arma cuerpo a cuerpo es el <strong class="fs-3 text-white">cuchillo</strong>, el cual es el mismo para todos.</p>
                 <div class="d-flex flex-row justify-content-center">
                     <button type="button" id="btn_cuchillo" class="btn btn-danger text-light text-center">Mostrar cuchillo</button>
                 </div>
@@ -38,7 +52,8 @@
                     <p class="text-light w-50 fs-5">
                         Unica arma cuerpo a cuerpo. El jugador puede moverse ligeramente más rápido con esta arma. <br> Tiene 2 tipos de ataque, ataque comun y apuñalada.
                     </p>
-                </div>     <br>
+                </div><br>
+                
                 <p class="text-light fs-3">De arma pesada podemos tener <strong class="text-danger"> sub-fusiles, rifles de asalto, escopetas, rifles de largo alcance</strong> y <strong class="text-danger"> ametralladoras ligeras.</strong><br>
                 Y como arma liviana, tenemos varios tipos de <strong class="text-danger">arma de mano.</strong>  <br>
                 <br> A continuación veremos todo el arsenal disponible, como aparece en el menú de compras: </p>
@@ -206,5 +221,6 @@
     </footer>
     
     <script src="js/mostrar.js"></script>
+    <script src="js/menuHamburguesa.js"></script>
 </body>
 </html>

@@ -14,13 +14,27 @@
 </head>
 <body>
     <div class="container-fluid min-vh-100">
-        <nav class="mt-2 fs-4 p-4 d-flex flex-row justify-content-around text-light bg-black bg-opacity-50 border border-light rounded-2">
-            <div><a href="introduccion.html">Introducción</a></div>
-            <div><a href="juego.html">Juego</a></div>
-            <div><a href="lore.html">Lore</a></div>
-            <div><a href="aimtech.html">Aimtech</a></div>
-            <div><a href="competitivo.html">Competitivo</a></div>
-            <div><a href="#formulario">Formulario</a></div>
+        <nav>
+            <div id="desktop" class="d-flex flex-row justify-content-around mt-2 fs-4 p-4 text-light bg-black bg-opacity-50 border border-secondary rounded-2">
+                <div><a href="introduccion.html">Introducción</a></div>
+                <div><a href="juego.html">Juego</a></div>
+                <div><a href="lore.html">Lore</a></div>
+                <div><a href="aimtech.html">Aimtech</a></div>
+                <div><a href="competitivo.html">Competitivo</a></div>
+                <div><a href="#formulario">Formulario</a></div>
+            </div>
+            
+             <!-- Botón hamburguesa -->
+            <button id="btnHamburguesa" class="btn btn-light p-2 w-100">☰</button>
+
+            <div id="mobile" class="flex-column align-items-center bg-black bg-opacity-50">
+                <div class="m-2"><a href="introduccion.html">Introducción</a></div>
+                <div class="m-2"><a href="juego.html">Juego</a></div>
+                <div class="m-2"><a href="lore.html">Lore</a></div>
+                <div class="m-2"><a href="aimtech.html">Aimtech</a></div>
+                <div class="m-2"><a href="competitivo.html">Competitivo</a></div>
+                <div class="m-2"><a href="#formulario">Formulario</a></div>
+            </div>
         </nav>
         <header class="m-4 text-light text-center">
             <h2 class="text-light text-center">Contactanos a través del siguiente formulario:</h2>
@@ -33,7 +47,7 @@
                     <!-- Nombre y Apellido -->
                     <div class="mb-3">
                         <label for="nombre" class="form-label fs-4">Nombre y Apellido</label>
-                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ej: Juan Pérez"required>
+                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ej: Juan Pérez" required>
                     </div>
                     <!-- Email -->
                     <div class="mb-3">
@@ -72,5 +86,6 @@
     </footer>
 
     <script src="js/formulario.js"></script>
+    <script src="js/menuHamburguesa.js"></script>
 </body>
 </html>
